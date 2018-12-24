@@ -3,4 +3,4 @@
 
 效果图：
 
-<img src="https://github.com/yitezh/YTSubmitButton/blob/master/YTSubmitButton/v.gif" width="320" alt="预览">
+<img src="https://github.com/yitezh/YTSubmitButton/blob/master/YTSubmitButton/v.gif" width="320" alt="抽奖">
