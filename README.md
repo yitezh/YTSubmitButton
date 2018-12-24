@@ -3,4 +3,4 @@
 
 效果图：
 
-<img src="https://github.com/wangxuewen/WXWLuckView/blob/master/WXWLuckView/Resource/%E6%8A%BD%E5%A5%96.gif" width="320" alt="抽奖">
+<img src="https://github.com/yitezh/YTSubmitButton/blob/master/YTSubmitButton/v.gif" width="320" alt="预览">
