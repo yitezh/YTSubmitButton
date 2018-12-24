@@ -54,7 +54,7 @@
     self.backgroundColor = UIColorFromRGB(0x108EE9);
     [self addSubview:self.titleLabel];
     [self addSubview:self.animationView];
-  
+    
 }
 
 - (void)addClickGesture {
@@ -63,16 +63,17 @@
 }
 
 - (void)tapAction:(id)sender {
-    if(self.payStatus == SubmitStatusDoing)
-        return;
-    
-    if([self.delegate respondsToSelector:@selector(didClickSubmitButton)]){
-        [self.delegate didClickSubmitButton];
+    if(self.payStatus == SubmitStatusNormal||self.payStatus == SubmitStatusFailed)
+    {
+        if([self.delegate respondsToSelector:@selector(didClickSubmitButton)]){
+            [self.delegate didClickSubmitButton];
+        }
     }
 }
 
 
 - (void)setPayStatus:(SubmitStatus)payStatus {
+    _payStatus = payStatus;
     switch (payStatus) {
         case SubmitStatusNormal:
             [self showNormalView];
