@@ -7,7 +7,7 @@
 //
 
 #import "YTSubmitAnimateView.h"
-#import "UIView+ReRect.h"
+#import "UIView+YTReRect.h"
 @interface YTSubmitAnimateView()<CAAnimationDelegate>{
     float rate;
 }
@@ -149,13 +149,21 @@
 
 
 - (void)showCheckAnimation {
-    CABasicAnimation *checkAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    checkAnimation.fromValue = @(0);
-    checkAnimation.toValue = @(1);
+
+    CAKeyframeAnimation *checkAnimation = [CAKeyframeAnimation animationWithKeyPath:@"strokeEnd"];
+    NSArray *values =  @[@0,@0.4,@0.8,@1.03,@0.97,@1];
+
+    checkAnimation.duration = 0.4;
     checkAnimation.beginTime = CACurrentMediaTime()+0.5;
-    checkAnimation.duration = 0.3;
+    checkAnimation.values = values;
+    checkAnimation.removedOnCompletion = NO;
     checkAnimation.fillMode = kCAFillModeForwards;
-    checkAnimation.removedOnCompletion  = NO;
+    checkAnimation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+                                       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     [self.checkLayer addAnimation:checkAnimation forKey:@"check_check_ani"];
 }
 

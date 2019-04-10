@@ -20,7 +20,6 @@
     YTSubmitButton *submitView = [[YTSubmitButton alloc]initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 50) animationRadius:15];
 //    submitView.textFont = [UIFont systemFontOfSize:13];
 //    submitView.textColor = [UIColor greenColor];
-    
     submitView.delegate = self;
     self.submitView = submitView;
     

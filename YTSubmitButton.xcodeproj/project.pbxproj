@@ -16,7 +16,7 @@
 		57001BEE21D08677001695D9 /* YTSubmitButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57001BED21D08677001695D9 /* YTSubmitButtonTests.m */; };
 		57001BF921D08677001695D9 /* YTSubmitButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57001BF821D08677001695D9 /* YTSubmitButtonUITests.m */; };
 		57001C0C21D086E6001695D9 /* YTSubmitAnimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57001C0721D086E5001695D9 /* YTSubmitAnimateView.m */; };
-		57001C0D21D086E6001695D9 /* UIView+ReRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 57001C0821D086E5001695D9 /* UIView+ReRect.m */; };
+		57001C0D21D086E6001695D9 /* UIView+YTReRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 57001C0821D086E5001695D9 /* UIView+YTReRect.m */; };
 		57001C0E21D086E6001695D9 /* YTSubmitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57001C0A21D086E5001695D9 /* YTSubmitButton.m */; };
 		57001C1321D0C62B001695D9 /* v.gif in Resources */ = {isa = PBXBuildFile; fileRef = 57001C1221D0C62B001695D9 /* v.gif */; };
 /* End PBXBuildFile section */
@@ -55,9 +55,9 @@
 		57001BF421D08677001695D9 /* YTSubmitButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTSubmitButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57001BF821D08677001695D9 /* YTSubmitButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTSubmitButtonUITests.m; sourceTree = "<group>"; };
 		57001BFA21D08677001695D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57001C0621D086E5001695D9 /* UIView+ReRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ReRect.h"; sourceTree = "<group>"; };
+		57001C0621D086E5001695D9 /* UIView+YTReRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YTReRect.h"; sourceTree = "<group>"; };
 		57001C0721D086E5001695D9 /* YTSubmitAnimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSubmitAnimateView.m; sourceTree = "<group>"; };
-		57001C0821D086E5001695D9 /* UIView+ReRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ReRect.m"; sourceTree = "<group>"; };
+		57001C0821D086E5001695D9 /* UIView+YTReRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YTReRect.m"; sourceTree = "<group>"; };
 		57001C0921D086E5001695D9 /* YTSubmitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSubmitButton.h; sourceTree = "<group>"; };
 		57001C0A21D086E5001695D9 /* YTSubmitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSubmitButton.m; sourceTree = "<group>"; };
 		57001C0B21D086E6001695D9 /* YTSubmitAnimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSubmitAnimateView.h; sourceTree = "<group>"; };
@@ -152,8 +152,8 @@
 				57001C0721D086E5001695D9 /* YTSubmitAnimateView.m */,
 				57001C0921D086E5001695D9 /* YTSubmitButton.h */,
 				57001C0A21D086E5001695D9 /* YTSubmitButton.m */,
-				57001C0621D086E5001695D9 /* UIView+ReRect.h */,
-				57001C0821D086E5001695D9 /* UIView+ReRect.m */,
+				57001C0621D086E5001695D9 /* UIView+YTReRect.h */,
+				57001C0821D086E5001695D9 /* UIView+YTReRect.m */,
 			);
 			path = vender;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57001C0D21D086E6001695D9 /* UIView+ReRect.m in Sources */,
+				57001C0D21D086E6001695D9 /* UIView+YTReRect.m in Sources */,
 				57001BD921D08675001695D9 /* ViewController.m in Sources */,
 				57001BE421D08677001695D9 /* main.m in Sources */,
 				57001C0E21D086E6001695D9 /* YTSubmitButton.m in Sources */,
